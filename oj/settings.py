@@ -101,7 +101,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ojdb',
         'USER': 'django',
-        'PASSWORD': 'django-user-password',
+        'PASSWORD': 'Django@123',
         'HOST':'localhost',
         'PORT':'3306',
     }
@@ -150,3 +150,4 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL= 'ojuser.Ojuser'
