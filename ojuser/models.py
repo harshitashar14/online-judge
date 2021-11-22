@@ -11,7 +11,7 @@ class Role(models.Model):
     def get_absolute_url(self):
         return reverse("_detail", kwargs={"pk": self.pk})
 
-class ojuser(models.Model):
+class Ojuser(models.Model):
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
