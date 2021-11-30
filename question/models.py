@@ -10,7 +10,8 @@ class Question(models.Model):
     creator = models.ForeignKey(Ojuser,null = True, on_delete=models.SET_NULL)
     submissions = models.IntegerField(default=0)
     editorial = models.TextField(max_length = 9000, default = '')
-
+    test_case = models.TextField(max_length = 1000)
+    test_case_output = models.TextField(max_length = 1000)
     def __str__(self):
         return self.name
 
