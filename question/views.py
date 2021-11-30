@@ -86,7 +86,7 @@ def runCppFile(request):
     cmd = ['g++ ' + filepath + ' -o ' + outPath + ' && cd ' + dirOutputs + ' && ./' + jobId]
     cmd1 = ['ls']
     try:
-        status = subprocess.run(cmd, timeout=60, shell=True, check=True, stdout=myop)
+        status = subprocess.run(cmd, timeout=2.1, shell=True, check=True, stdout=myop)
         print(status.stdout)
         return JsonResponse({'status':'succeeded', 
          'code':200, 
